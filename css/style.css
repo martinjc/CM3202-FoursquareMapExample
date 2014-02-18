@@ -3,6 +3,15 @@ body {
     margin: 0;
 }
 
-html, body, #map {
+html, body {
     height: 100%;
+}
+
+#login {
+    height: 8%;
+    text-align: center;
+}
+
+#map {
+    height: 92%;
 }
