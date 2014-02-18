@@ -87,8 +87,8 @@
             radius: 500,
             intent: "browse",
             categoryId: "4d4b7105d754a06376d81259",
-            client_id: "VFTO3K4C1ZQLUNM1KTWV1VHOS2B52FUMP1OGQPFZKCEA1IKP",
-            client_secret: "0RDVCM2WCYEOQ2WWD1204PNAACF4BHSUUEUR0NWV14FC5EAS",
+            client_id: "YOUR_FOURSQUARE_CLIENT_ID",
+            client_secret: "YOUR_FOURSQUARE_CLIENT_SECRET",
             v: 20140218
         }).done(function(data){
             $.each(data.response.venues, function(i, venue) {
@@ -119,7 +119,7 @@
 
 
     function initmap() {
-        var tileURL = 'http://{s}.tile.cloudmade.com/882045d6a85f47d99d088ac83803d3f1/997/256/{z}/{x}/{y}.png';
+        var tileURL = 'http://{s}.tile.cloudmade.com/YOUR_CLOUDMADE_API_KEY/997/256/{z}/{x}/{y}.png';
         var attribString = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>';
         var tileLayer = new L.tileLayer(tileURL, {
             attribution: attribString,
